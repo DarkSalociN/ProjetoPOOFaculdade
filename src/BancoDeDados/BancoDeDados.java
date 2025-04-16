@@ -1,5 +1,8 @@
 package BancoDeDados;
 
+import Jogo.Mundo;
+import Jogo.NPCs;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -25,5 +28,13 @@ public class BancoDeDados {
         }catch (SQLException e){
             e.printStackTrace();
         }
+    }
+
+    public static Mundo buscarMundoPorId(int i) {
+        return null;
+    }
+
+    public static NPCs buscarNPCsPorId(int i) {
+    return null;
     }
 }
