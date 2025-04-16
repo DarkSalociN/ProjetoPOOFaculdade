@@ -1,10 +1,10 @@
 package main;
 
-import Jogo.JogoMinecraft;
+import Jogo.Mundo;
 
 public class Main {
     public static void main(String[] args) {
-        JogoMinecraft jogo = new JogoMinecraft("Steve", "Carvalho");
+        Mundo jogo = new Mundo("Steve", "Bruta");
         jogo.iniciarJogo();
     }
 }
