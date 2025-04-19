@@ -2,23 +2,16 @@ package Jogo;
 
 public class Mundo {
     private Player personagem;
-    private Drops drops;
-    private NPCs npcs;
-
-
-    public Player getPersonagem() {
-        return this.personagem;
-    }
-
+    private Madeira madeira;
 
     public Mundo(String nomePersonagem, String tipoMadeira) {
-        this.drops = new Drops(tipoMadeira);
-        this.npcs = new NPCs("Villager", false);
+        this.personagem = new Player("Steve",40,0,20);
+        this.madeira = new Madeira(tipoMadeira);
     }
 
     public void iniciarJogo(){
         System.out.println("Jogo iniciado com sucesso!\n");
-        drops.coletar();
-        npcs.SpawnNPc();
+        personagem.entrarNoMundo();
+        madeira.coletar();
     }
 }

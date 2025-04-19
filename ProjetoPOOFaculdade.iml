@@ -7,16 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/mysql-connector-j_9.3.0-1ubuntu24.10_all/usr/share/java/mysql-connector-java-9.3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="mysql-connector-java-9.3.0" level="project" />
-    <orderEntry type="library" name="postgresql-42.7.5" level="project" />
   </component>
 </module>
