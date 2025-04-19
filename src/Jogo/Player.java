@@ -69,7 +69,7 @@ public class Player {
         String user = "postgres";
         String password = "pereira12";
 
-        String sql = "SELECT * FROM Player WHERE id = ?";
+        String sql = "SELECT * FROM \"Player\" WHERE id = ?";
 
         try (Connection conn = DriverManager.getConnection(url, user, password);
              PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -82,6 +82,8 @@ public class Player {
                 p.id = rs.getInt("id");
                 p.nome = rs.getString("nome");
                 p.vida = rs.getInt("vida");
+                p.defesa = rs.getInt("defesa");
+                p.fome = rs.getInt("fome");
                 p.ferramenta = rs.getString("ferramenta");
                 return p;
             }

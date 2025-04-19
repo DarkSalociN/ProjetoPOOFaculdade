@@ -23,7 +23,6 @@ public class BancoDeDados {
             stmt.setString(2,"Joao@email.com");
 
             stmt.executeUpdate();
-            System.out.println("Inserido com sucesso!");
 
         }catch (SQLException e){
             e.printStackTrace();

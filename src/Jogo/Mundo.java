@@ -13,12 +13,10 @@ public class Mundo {
 
     public Mundo(String nomePersonagem, String tipoMadeira) {
         this.drops = new Drops(tipoMadeira);
-        this.npcs = new NPCs("Villager", false);
     }
 
     public void iniciarJogo(){
         System.out.println("Jogo iniciado com sucesso!\n");
         drops.coletar();
-        npcs.SpawnNPc();
     }
 }
