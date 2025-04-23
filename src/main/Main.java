@@ -1,10 +1,7 @@
 package main;
 
 import BancoDeDados.BancoDeDados;
-import Jogo.Ferramentas;
-import Jogo.Mundo;
-import Jogo.NPCs;
-import Jogo.Player;
+import Jogo.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +27,12 @@ public class Main {
             System.out.println("Machado não encontrado.");
         }
 
+        Drops tabua = Drops.criarDropsPorId(1);
+        if(tabua != null) {
+            System.out.println("\nTabua: " + tabua.getNome() + "\n");
+        }else {
+            System.out.println("Drop não encontrado. ");
+        }
     }
 
 }
